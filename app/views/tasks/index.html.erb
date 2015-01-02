@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tasks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Tasknum</th>
+      <th>Taskname</th>
+      <th>Duration</th>
+      <th>Pctoftime</th>
+      <th>Basestart</th>
+      <th>Basefinish</th>
+      <th>Projstart</th>
+      <th>Projfinish</th>
+      <th>Taskdependencies</th>
+      <th>Taskstatus</th>
+      <th>Tasknotes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.project_id %></td>
+        <td><%= task.tasknum %></td>
+        <td><%= task.taskname %></td>
+        <td><%= task.duration %></td>
+        <td><%= task.pctoftime %></td>
+        <td><%= task.basestart %></td>
+        <td><%= task.basefinish %></td>
+        <td><%= task.projstart %></td>
+        <td><%= task.projfinish %></td>
+        <td><%= task.taskdependencies %></td>
+        <td><%= task.taskstatus %></td>
+        <td><%= task.tasknotes %></td>
+        <td><%= link_to 'Show', task %></td>
+        <td><%= link_to 'Edit', edit_task_path(task) %></td>
+        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Task', new_task_path %>

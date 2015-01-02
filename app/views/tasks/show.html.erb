@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @task.project_id %>
+</p>
+
+<p>
+  <strong>Tasknum:</strong>
+  <%= @task.tasknum %>
+</p>
+
+<p>
+  <strong>Taskname:</strong>
+  <%= @task.taskname %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @task.duration %>
+</p>
+
+<p>
+  <strong>Pctoftime:</strong>
+  <%= @task.pctoftime %>
+</p>
+
+<p>
+  <strong>Basestart:</strong>
+  <%= @task.basestart %>
+</p>
+
+<p>
+  <strong>Basefinish:</strong>
+  <%= @task.basefinish %>
+</p>
+
+<p>
+  <strong>Projstart:</strong>
+  <%= @task.projstart %>
+</p>
+
+<p>
+  <strong>Projfinish:</strong>
+  <%= @task.projfinish %>
+</p>
+
+<p>
+  <strong>Taskdependencies:</strong>
+  <%= @task.taskdependencies %>
+</p>
+
+<p>
+  <strong>Taskstatus:</strong>
+  <%= @task.taskstatus %>
+</p>
+
+<p>
+  <strong>Tasknotes:</strong>
+  <%= @task.tasknotes %>
+</p>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

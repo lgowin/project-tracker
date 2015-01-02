@@ -1,0 +1,1 @@
+json.extract! @task, :id, :project_id, :tasknum, :taskname, :duration, :pctoftime, :basestart, :basefinish, :projstart, :projfinish, :taskdependencies, :taskstatus, :tasknotes, :created_at, :updated_at

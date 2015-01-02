@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  group: MyString
+  lead: MyString
+  person: MyString
+  personnotes: MyText
+  task_id: 1
+
+two:
+  group: MyString
+  lead: MyString
+  person: MyString
+  personnotes: MyText
+  task_id: 1

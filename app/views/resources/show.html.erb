@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @resource.group %>
+</p>
+
+<p>
+  <strong>Lead:</strong>
+  <%= @resource.lead %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @resource.person %>
+</p>
+
+<p>
+  <strong>Personnotes:</strong>
+  <%= @resource.personnotes %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @resource.task_id %>
+</p>
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>
